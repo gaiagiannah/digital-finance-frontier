@@ -1,0 +1,3 @@
+# This directory holds market data exports (CSV, JSON).
+# Files are gitignored by default. Add specific files with:
+#   git add -f data/market-data/filename.csv   

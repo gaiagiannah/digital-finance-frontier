@@ -1,0 +1,3 @@
+# This directory holds on-chain analytics exports.
+# Dune queries, Nansen data, Etherscan exports.
+# Files are gitignored by default.   

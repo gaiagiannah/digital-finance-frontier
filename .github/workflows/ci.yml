@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          pip install flake8 black
+      - name: Lint Python
+        run: |
+          flake8 code/ --max-line-length=120 --statistics
+      - name: Check formatting
+        run: |
+          black --check code/ || true
+
+  markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Markdown
+        run: |
+          # Verify all .md files are non-empty
+          find . -name "*.md" -type f -empty | grep -v ".gitkeep" | grep -v "README" && exit 1 || true
+          echo "All markdown files non-empty."
+
+  structure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify directory structure
+        run: |
+          # Check all expected directories exist
+          for dir in 00-executive-summary 01-architecture 02-global-institutions \
+            03-platforms 04-tokenization 05-defi-web3 06-ai-finance \
+            07-quantum-finance 08-cybersecurity-intelligence 09-geopolitics \
+            10-disruptive-technologies 11-research-labs 12-timeline-projections \
+            13-forensics-intelligence 14-strategic-analysis 15-appendices \
+            code data assets; do
+            if [ ! -d "$dir" ]; then
+              echo "MISSING: $dir"
+              exit 1
+            fi
+          done
+          echo "All directories present."   

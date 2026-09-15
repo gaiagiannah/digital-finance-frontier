@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (keep .gitkeep, ignore actual data files)
+data/market-data/*
+data/on-chain-analytics/*
+data/research-datasets/*
+!data/market-data/.gitkeep
+!data/on-chain-analytics/.gitkeep
+!data/research-datasets/.gitkeep
+
+# Assets (keep .gitkeep, ignore large files)
+assets/diagrams/*
+assets/charts/*
+assets/infographics/*
+!assets/diagrams/.gitkeep
+!assets/charts/.gitkeep
+!assets/infographics/.gitkeep
+
+# Secrets
+.env
+*.key
+*.pem
+api_keys.json   

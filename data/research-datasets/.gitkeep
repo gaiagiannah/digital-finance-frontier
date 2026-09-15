@@ -1,0 +1,3 @@
+# This directory holds research datasets.
+# Labeled transaction data, threat actor TTPs, etc.
+# Files are gitignored by default (may contain sensitive data).   

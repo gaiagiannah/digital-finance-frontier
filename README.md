@@ -45,26 +45,17 @@ digital-finance-frontier/
 
 
 ## The Six-Layer Architecture
-┌─────────────────────────────────────────────────────────────────────────┐
-│ LAYER 6: REGULATION & GOVERNANCE │
-│ G20 · FSB · IOSCO · IMF · BIS CPMI · GENIUS Act · MiCA │
-├─────────────────────────────────────────────────────────────────────────┤
-│ LAYER 5: DISTRIBUTION & ACCESS │
-│ Schwab · Fidelity · Vanguard · Coinbase · Kraken · PayPal │
-├─────────────────────────────────────────────────────────────────────────┤
-│ LAYER 4: ISSUANCE & TOKENIZATION │
-│ BlackRock · JPMorgan · DTCC · NYSE · Kraken xStocks · Ondo │
-├─────────────────────────────────────────────────────────────────────────┤
-│ LAYER 3: SETTLEMENT & ACCEPTANCE │
-│ Visa · Mastercard · SWIFT · Canton · TCH · Agorá · mBridge │
-├─────────────────────────────────────────────────────────────────────────┤
-│ LAYER 2: PROTOCOL & INFRASTRUCTURE │
-│ Ethereum L2s · Solana · Chainlink · Fireblocks · Aave · Lido │
-├─────────────────────────────────────────────────────────────────────────┤
-│ LAYER 1: MONETARY FOUNDATION │
-│ Central Bank Reserves · wCBDCs · Tokenized Deposits · Stablecoins │
-└─────────────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    L6["LAYER 6: REGULATION & GOVERNANCE<br/>G20 · FSB · IOSCO · IMF · BIS CPMI · GENIUS Act · MiCA"]
+    L5["LAYER 5: DISTRIBUTION & ACCESS<br/>Schwab · Fidelity · Vanguard · Coinbase · Kraken · PayPal"]
+    L4["LAYER 4: ISSUANCE & TOKENIZATION<br/>BlackRock · JPMorgan · DTCC · NYSE · Kraken xStocks · Ondo"]
+    L3["LAYER 3: SETTLEMENT & ACCEPTANCE<br/>Visa · Mastercard · SWIFT · Canton · TCH · Agorá · mBridge"]
+    L2["LAYER 2: PROTOCOL & INFRASTRUCTURE<br/>Ethereum L2s · Solana · Chainlink · Fireblocks · Aave · Lido"]
+    L1["LAYER 1: MONETARY FOUNDATION<br/>Central Bank Reserves · wCBDCs · Tokenized Deposits · Stablecoins"]
 
+    L6 --> L5 --> L4 --> L3 --> L2 --> L1
+```
 
 ## Quick Start
 

@@ -99,7 +99,7 @@ Built with research from 100+ sources across institutional reports, academic pap
 ## `LICENSE`
 Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
 
-Copyright (c) 2026 [Your Name]
+Copyright (c) 2026 [gaiagiannah]
 
 You are free to:
 Share — copy and redistribute the material in any medium or format

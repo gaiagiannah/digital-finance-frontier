@@ -4,8 +4,6 @@
 
 A comprehensive research project mapping the full architecture of digital finance — from monetary foundations to AI agents, quantum threats, and geopolitical fragmentation.
 
-**Version 1.0 | September 2026**
-
 ---
 
 ## Overview

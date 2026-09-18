@@ -20,6 +20,7 @@ This project documents the most fundamental architectural transformation in glob
 - Geopolitical split: **G7 corridor** (Agorá/Pontes/SWIFT) vs. **China/Gulf corridor** (mBridge/e-CNY)
 
 ## Repository Structure
+```text
 digital-finance-frontier/
 ├── 00-executive-summary/ # 5-page briefing + methodology
 ├── 01-architecture/ # Six-layer stack model
@@ -40,6 +41,7 @@ digital-finance-frontier/
 ├── code/ # Python scripts, ML models, quantum sims
 ├── data/ # Market data, on-chain analytics
 └── assets/ # Diagrams, charts, infographics
+```
 
 
 ## The Six-Layer Architecture
